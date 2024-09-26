@@ -100,4 +100,10 @@ public void Address() throws IOException
 //}
 //
 }
-
+@after Suite
+	public void browserclosed()
+	{
+driver.close();
+	System.out.println("Browser Closed");
+	
+	}
