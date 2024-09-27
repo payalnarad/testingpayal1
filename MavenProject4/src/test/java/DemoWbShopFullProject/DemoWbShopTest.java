@@ -8,6 +8,7 @@ import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
@@ -99,11 +100,12 @@ public void Address() throws IOException
 //
 //}
 //
-}
-@after Suite
+
+@AfterSuite 
 	public void browserclosed()
 	{
 driver.close();
 	System.out.println("Browser Closed");
 	
 	}
+}
